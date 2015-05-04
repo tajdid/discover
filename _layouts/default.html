@@ -3,18 +3,13 @@
   <div class="wrap">
     <header>
       <div class="container">
-        <h1>#Dscvr</h1>
+        <h1>{{ site.data.settings.logo }}</h1>
       </div>
       <!-- /.container -->
     </header>
     <!-- /.topbar -->
     {{ content }}
-    <footer>
-      <div class="container">
-        <p class="copyright">Made with ♥ by <a href="http://twitter.com/tajdidr">Tajdid Rahman</a>.</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+    {% include footer.html %}
   </div>
 </body>
 </html>
