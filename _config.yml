@@ -2,8 +2,8 @@
 title: Discover
 email: hi@tajdid.me.uk
 description: "A continuously updated list of inspiration, useful links and other goodies that I’ve come across over the past few years."
-baseurl: ""
-url: "http://yourdomain.com"
+baseurl: "/discover"
+url: "http://tajdid.me.uk/discover"
 twitter_username: tajdidr
 github_username:  tajdid
 
