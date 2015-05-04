@@ -1,0 +1,14 @@
+footer {
+  border-top: 1px solid rgba(white, 0.25);
+  padding: 40px 0;
+  font-size: 0.9em;
+  text-align: center;
+
+  a {
+  	font-weight: 700;
+  }
+
+  @include media ($desktop) {
+  	font-size: 1em;
+  }
+}

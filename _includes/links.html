@@ -1,0 +1,11 @@
+{% for main in site.data.settings.box %}
+<div class="box">
+  <h3 class="title">{{ main.title }}</h3>
+
+  <ul class="links">
+  {% for item in main.link %}
+    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endfor %}

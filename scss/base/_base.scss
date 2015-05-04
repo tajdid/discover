@@ -1,0 +1,62 @@
+// IMPORTS
+@import
+  'variables';
+
+// BASE STYLES
+html {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+body {
+  color: $body-colour;
+  // background: $body-background;
+  
+  background-size: cover;
+  font-family: $sans-serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  // font-weight: 700;
+  color: $hyperlink;
+  text-decoration: none;
+
+  &:hover {
+    color: $hyperlink-hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: $sans-serif;
+}
+
+::selection {
+  color: $selection-colour;
+  background: $selection-background;
+}
+
+::-moz-selection {
+  color: $selection-colour;
+  background: $selection-background;
+ }
+
+.container {
+  @include outer-container($local-max-width: 1280px);
+  overflow: hidden;
+  padding: 0 1em;
+}
+
+.wrap {
+  @include linear-gradient(50deg, #9D50BB, #6E48AA, $fallback: #6E48AA);
+  width: 100%;
+  min-height: 100%;
+  border: 10px solid white;
+
+  @include media($tablet) {
+    border: 14px solid white;
+  }
+}

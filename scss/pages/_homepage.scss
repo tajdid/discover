@@ -1,0 +1,125 @@
+header {
+  // background: #111 url('https://download.unsplash.com/photo-1429105049372-8d928fd29ba1') no-repeat center;
+  background-size: contain;
+  // @include linear-gradient(50deg, #232526, #414345);
+  background: url('../img/header_bg.png') no-repeat bottom;
+  padding: 14% 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @include media($desktop) {
+    margin-bottom: 40px;
+  }  
+
+  h1 {
+    display: inline-block;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0px 1px 1px rgba(black, 0.2);
+    position: relative;
+    z-index: 10;
+
+    @include media($desktop) {
+      &::after {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%) skew(-10deg);
+
+        background: black;
+        width: 0px;
+        height: 100%;
+        @include transition(all, 0.4s, ease-in-out);
+      }
+
+      &:hover:after {
+        width: 118%;
+        transition-timing-function: cubic-bezier(.52,1.64,.37,.66);
+      }
+    }
+
+    // &::before {
+    //   opacity: 0.15;
+    //   content: "DISCOVER";
+    //   position: absolute;
+    //   z-index: -1;
+    //   // top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -38%);
+
+    //   font-size: 400%;
+    // }
+  }
+
+  @include media ($tablet) {
+    font-size: 2.5em;
+    letter-spacing: 8px;
+  }
+}
+
+.about {
+  text-align: center;
+  line-height: 1.6;
+  margin: -40px 0 50px;
+
+  .small {
+    margin-top: 20px;
+    font-size: 90%;
+    opacity: 0.7;
+  }
+
+  @include media($desktop) {
+    margin: -100px 0 100px;
+    p {
+      @include span-columns(8);
+      @include shift(2);
+      font-size: 1.4em;
+    }
+  }
+}
+
+.box {
+  @include span-columns(12);
+  margin-bottom: 40px;
+  
+  @include media($desktop) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
+
+.title {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: $title-colour;
+  text-shadow: 0px 1px 1px rgba(black, 0.2);
+  border-bottom: 1px solid rgba(white, 0.25);
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.links {
+  li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    display: block;
+
+    a {
+      padding: 5px 10px;
+      @include bounce-to-right;
+
+      &:hover {
+        color: black;
+
+        // &:after {
+        //   content: "→";
+        // }
+      }
+    }
+  }
+}
