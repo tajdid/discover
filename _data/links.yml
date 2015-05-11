@@ -73,8 +73,16 @@ box:
       url: "https://soundcloud.com/designmatters"
     - name: "On The Grid"
       url: "http://5by5.tv/onthegrid"
-    - name: "Raoul Marks"
-      url: "http://raoulmarks.com"
+    - name: "Sean Wes Podcast"
+      url: "http://seanwes.com/podcast/"
+    - name: "Let's Make Mistakes"
+      url: "http://www.muleradio.net/mistakes/"
+    - name: "The Web Ahead"
+      url: "http://5by5.tv/webahead"
+    - name: "TypeRadio"
+      url: "http://www.typeradio.org/"
+    - name: "Adventures in Design"
+      url: "http://www.adventuresindesignmarket.com/"
 
   - title: "Reading"
     link:
